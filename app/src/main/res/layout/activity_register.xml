@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayoutR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09800E"
+    tools:context=".Register">
+
+    <View
+        android:id="@+id/viewRHelper1"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewRHelper2"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/Name"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRName" />
+
+    <EditText
+        android:id="@+id/editTextRName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="18dp"
+        android:background="#F61100"
+        android:ems="10"
+        android:hint="@string/writeName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRfirstName"
+        app:layout_constraintEnd_toStartOf="@+id/viewRHelper1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewRuserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/userName"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRuserName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRuserName" />
+
+    <EditText
+        android:id="@+id/editTextRuserName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="18dp"
+        android:background="#F61100"
+        android:ems="10"
+        android:hint="@string/writeuserName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRlastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewRHelper1"
+        tools:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewRfirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/firstName"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRfirstName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRfirstName" />
+
+    <EditText
+        android:id="@+id/editTextRfirstName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="18dp"
+        android:background="#F61100"
+        android:ems="10"
+        android:hint="@string/writefirstName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRMail"
+        app:layout_constraintEnd_toStartOf="@+id/viewRHelper1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewRlastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/lastName"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRlastName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRlastName" />
+
+    <EditText
+        android:id="@+id/editTextRlastName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="18dp"
+        android:background="#F61100"
+        android:ems="10"
+        android:hint="@string/writelastName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewRHelper1"
+        tools:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewRMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/Mail"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRMail"
+        app:layout_constraintStart_toStartOf="@+id/editTextRMail" />
+
+    <EditText
+        android:id="@+id/editTextRMail"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="18dp"
+        android:background="#F61100"
+        android:ems="10"
+        android:hint="@string/writeMail"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRGender"
+        app:layout_constraintEnd_toStartOf="@+id/viewRHelper1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewRNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/Number"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRNumber"
+        app:layout_constraintStart_toStartOf="@+id/editTextRNumber" />
+
+    <EditText
+        android:id="@+id/editTextRNumber"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="18dp"
+        android:background="#F61100"
+        android:ems="10"
+        android:hint="@string/writeNumber"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewRHelper1"
+        tools:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewRGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Gender"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupRGender"
+        app:layout_constraintTop_toBottomOf="@+id/viewRHelper2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextRMail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRGender">
+
+        <RadioButton
+            android:id="@+id/radioButtonRGender1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/writeGender1"
+            android:textColor="#FFFFFF"
+            tools:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRGender2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/writeGender2"
+            android:textColor="#FFFFFF"
+            tools:textSize="14sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewRType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Type"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupRType"
+        app:layout_constraintTop_toBottomOf="@+id/viewRHelper2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextRNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRType">
+
+        <RadioButton
+            android:id="@+id/radioButtonRType1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/writeType1"
+            android:textColor="#FFFFFF"
+            tools:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRType2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/writeType2"
+            android:textColor="#FFFFFF"
+            tools:textSize="14sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewRAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/Age"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextRAge"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupRGender" />
+
+    <EditText
+        android:id="@+id/editTextRAge"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#F61100"
+        android:ems="10"
+        android:hint="@string/writeAge"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/viewRHelper1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRAge"
+        tools:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewRPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/Password"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextRPassword"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupRType" />
+
+    <EditText
+        android:id="@+id/editTextRPassword"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:background="#F61100"
+        android:ems="10"
+        android:hint="@string/writePassword"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewRHelper1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRPassword"
+        tools:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonRRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="Registrarse"
+        android:text="@string/register"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRBack"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRAge"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/buttonRBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="Volver"
+        android:text="@string/back"
+        app:layout_constraintStart_toEndOf="@+id/viewRHelper1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRPassword"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
